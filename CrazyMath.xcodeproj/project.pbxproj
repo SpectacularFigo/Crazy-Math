@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28F1B2861C02BA8800553D97 /* WorldGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B2851C02BA8800553D97 /* WorldGenerator.m */; };
+		28F1B2891C02BAA900553D97 /* GameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B2881C02BAA900553D97 /* GameData.m */; };
+		28F1B28C1C02BAC000553D97 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B28B1C02BAC000553D97 /* GameScene.m */; };
+		28F1B28E1C02BAE500553D97 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 28F1B28D1C02BAE500553D97 /* ground.png */; };
+		28F1B2911C02BAF500553D97 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B2901C02BAF500553D97 /* Hero.m */; };
+		28F1B2941C02BB1200553D97 /* PointsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F1B2931C02BB1200553D97 /* PointsLabel.m */; };
+		E71583D71BFA9B7A00C1E5E7 /* G2OperatorScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583D61BFA9B7A00C1E5E7 /* G2OperatorScene.m */; };
+		E71583DC1BFA9C5B00C1E5E7 /* G2PlusScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583DB1BFA9C5B00C1E5E7 /* G2PlusScene.m */; };
+		E71583DF1BFA9C6C00C1E5E7 /* G2PlusWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583DE1BFA9C6C00C1E5E7 /* G2PlusWinScene.m */; };
+		E71583E21BFA9C7C00C1E5E7 /* G2PlusLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583E11BFA9C7C00C1E5E7 /* G2PlusLoseScene.m */; };
+		E71583E51BFA9C8F00C1E5E7 /* G2PlusFinishScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583E41BFA9C8F00C1E5E7 /* G2PlusFinishScene.m */; };
+		E71583E81BFA9CD300C1E5E7 /* G2SubtractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583E71BFA9CD300C1E5E7 /* G2SubtractScene.m */; };
+		E71583EB1BFA9CEC00C1E5E7 /* G2SubtractWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583EA1BFA9CEC00C1E5E7 /* G2SubtractWinScene.m */; };
+		E71583EE1BFA9CFC00C1E5E7 /* G2SubtractLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583ED1BFA9CFC00C1E5E7 /* G2SubtractLoseScene.m */; };
+		E71583F11BFA9D0C00C1E5E7 /* G2SubtractFinishScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E71583F01BFA9D0C00C1E5E7 /* G2SubtractFinishScene.m */; };
+		E785E50D1BFD3D2600D23CCB /* G3OperatorScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E50C1BFD3D2600D23CCB /* G3OperatorScene.m */; };
+		E785E5101BFD3D6B00D23CCB /* G3PlusScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E50F1BFD3D6B00D23CCB /* G3PlusScene.m */; };
+		E785E5131BFD3D7E00D23CCB /* G3PlusWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5121BFD3D7E00D23CCB /* G3PlusWinScene.m */; };
+		E785E5161BFD3D9700D23CCB /* G3PlusLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5151BFD3D9700D23CCB /* G3PlusLoseScene.m */; };
+		E785E5191BFD3DA700D23CCB /* G3PlusFinishScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5181BFD3DA700D23CCB /* G3PlusFinishScene.m */; };
+		E785E51C1BFD3DBB00D23CCB /* G3SubtractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E51B1BFD3DBB00D23CCB /* G3SubtractScene.m */; };
+		E785E51F1BFD3DCD00D23CCB /* G3SubtractWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E51E1BFD3DCD00D23CCB /* G3SubtractWinScene.m */; };
+		E785E5221BFD3DDF00D23CCB /* G3SubtractLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5211BFD3DDF00D23CCB /* G3SubtractLoseScene.m */; };
+		E785E5251BFD3DF200D23CCB /* G3SubtractFinishScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5241BFD3DF200D23CCB /* G3SubtractFinishScene.m */; };
+		E785E52A1BFD448200D23CCB /* G3MultiplyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5291BFD448200D23CCB /* G3MultiplyScene.m */; };
+		E785E52D1BFD449300D23CCB /* G3MultiplyWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E52C1BFD449300D23CCB /* G3MultiplyWinScene.m */; };
+		E785E5301BFD44A200D23CCB /* G3MultiplyLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E52F1BFD44A200D23CCB /* G3MultiplyLoseScene.m */; };
+		E785E5331BFD44B500D23CCB /* G3MultiplyFinishScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5321BFD44B500D23CCB /* G3MultiplyFinishScene.m */; };
+		E785E5361BFD4C3F00D23CCB /* G3DivideScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5351BFD4C3F00D23CCB /* G3DivideScene.m */; };
+		E785E5391BFD4C4E00D23CCB /* G3DivideWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E5381BFD4C4E00D23CCB /* G3DivideWinScene.m */; };
+		E785E53C1BFD4C5E00D23CCB /* G3DivideLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E53B1BFD4C5E00D23CCB /* G3DivideLoseScene.m */; };
+		E785E53F1BFD4C6D00D23CCB /* G3DivideFinishScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E785E53E1BFD4C6D00D23CCB /* G3DivideFinishScene.m */; };
+		E7CFFF771BF725EC00EF8EB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFF761BF725EC00EF8EB4 /* main.m */; };
+		E7CFFF7A1BF725EC00EF8EB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFF791BF725EC00EF8EB4 /* AppDelegate.m */; };
+		E7CFFF7D1BF725EC00EF8EB4 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFF7C1BF725EC00EF8EB4 /* MenuScene.m */; };
+		E7CFFF7F1BF725EC00EF8EB4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7CFFF7E1BF725EC00EF8EB4 /* GameScene.sks */; };
+		E7CFFF821BF725EC00EF8EB4 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFF811BF725EC00EF8EB4 /* GameViewController.m */; };
+		E7CFFF851BF725EC00EF8EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CFFF831BF725EC00EF8EB4 /* Main.storyboard */; };
+		E7CFFF871BF725EC00EF8EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7CFFF861BF725EC00EF8EB4 /* Assets.xcassets */; };
+		E7CFFF951BF725EC00EF8EB4 /* CrazyMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFF941BF725EC00EF8EB4 /* CrazyMathTests.m */; };
+		E7CFFFA01BF725EC00EF8EB4 /* CrazyMathUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFF9F1BF725EC00EF8EB4 /* CrazyMathUITests.m */; };
+		E7CFFFB01BF72B2200EF8EB4 /* LevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFAF1BF72B2200EF8EB4 /* LevelScene.m */; };
+		E7CFFFB41BF7D09700EF8EB4 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFB31BF7D09700EF8EB4 /* TestScene.m */; };
+		E7CFFFB71BF7D0AE00EF8EB4 /* IntroductionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFB61BF7D0AE00EF8EB4 /* IntroductionScene.m */; };
+		E7CFFFBB1BF7D91E00EF8EB4 /* G1OperatorScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFBA1BF7D91E00EF8EB4 /* G1OperatorScene.m */; };
+		E7CFFFBF1BF7DADA00EF8EB4 /* G1PlusScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFBE1BF7DADA00EF8EB4 /* G1PlusScene.m */; };
+		E7CFFFC21BF7DBA300EF8EB4 /* G1PlusWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFC11BF7DBA300EF8EB4 /* G1PlusWinScene.m */; };
+		E7CFFFC51BF7DBB300EF8EB4 /* G1PlusLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFC41BF7DBB300EF8EB4 /* G1PlusLoseScene.m */; };
+		E7CFFFC81BF7DBCA00EF8EB4 /* G1PlusFinishScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFC71BF7DBCA00EF8EB4 /* G1PlusFinishScene.m */; };
+		E7CFFFCC1BF7DC5500EF8EB4 /* G1SubtractScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFCB1BF7DC5500EF8EB4 /* G1SubtractScene.m */; };
+		E7CFFFCF1BF7DC6A00EF8EB4 /* G1SubtractWinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFCE1BF7DC6A00EF8EB4 /* G1SubtractWinScene.m */; };
+		E7CFFFD21BF7DC7F00EF8EB4 /* G1SubtractLoseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFD11BF7DC7F00EF8EB4 /* G1SubtractLoseScene.m */; };
+		E7CFFFD51BF7DC9600EF8EB4 /* G1SubtractFinishScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CFFFD41BF7DC9600EF8EB4 /* G1SubtractFinishScene.m */; };
+		E7DEDC231BFD8D9C00054F14 /* G1PlusGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDC221BFD8D9C00054F14 /* G1PlusGameOverScene.m */; };
+		E7DEDC261BFDAAE400054F14 /* G1SubtractGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDC251BFDAAE400054F14 /* G1SubtractGameOverScene.m */; };
+		E7DEDC291BFDAB0500054F14 /* G2PlusGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDC281BFDAB0500054F14 /* G2PlusGameOverScene.m */; };
+		E7DEDC2C1BFDAB1900054F14 /* G2SubtractGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDC2B1BFDAB1900054F14 /* G2SubtractGameOverScene.m */; };
+		E7DEDC2F1BFDAC3500054F14 /* G3PlusGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDC2E1BFDAC3500054F14 /* G3PlusGameOverScene.m */; };
+		E7DEDC321BFDAC5400054F14 /* G3SubtractGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDC311BFDAC5400054F14 /* G3SubtractGameOverScene.m */; };
+		E7DEDC351BFDAC6A00054F14 /* G3MultiplyGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDC341BFDAC6A00054F14 /* G3MultiplyGameOverScene.m */; };
+		E7DEDC381BFDAC7C00054F14 /* G3DivideGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DEDC371BFDAC7C00054F14 /* G3DivideGameOverScene.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7CFFF911BF725EC00EF8EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7CFFF6A1BF725EC00EF8EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7CFFF711BF725EC00EF8EB4;
+			remoteInfo = CrazyMath;
+		};
+		E7CFFF9C1BF725EC00EF8EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7CFFF6A1BF725EC00EF8EB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7CFFF711BF725EC00EF8EB4;
+			remoteInfo = CrazyMath;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28F1B2841C02BA7C00553D97 /* WorldGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldGenerator.h; sourceTree = "<group>"; };
+		28F1B2851C02BA8800553D97 /* WorldGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldGenerator.m; sourceTree = "<group>"; };
+		28F1B2871C02BAA100553D97 /* GameData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameData.h; sourceTree = "<group>"; };
+		28F1B2881C02BAA900553D97 /* GameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameData.m; sourceTree = "<group>"; };
+		28F1B28A1C02BAB500553D97 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		28F1B28B1C02BAC000553D97 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		28F1B28D1C02BAE500553D97 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+		28F1B28F1C02BAEE00553D97 /* Hero.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		28F1B2901C02BAF500553D97 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		28F1B2921C02BB0C00553D97 /* PointsLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointsLabel.h; sourceTree = "<group>"; };
+		28F1B2931C02BB1200553D97 /* PointsLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointsLabel.m; sourceTree = "<group>"; };
+		E71583D51BFA9B7A00C1E5E7 /* G2OperatorScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2OperatorScene.h; sourceTree = "<group>"; };
+		E71583D61BFA9B7A00C1E5E7 /* G2OperatorScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2OperatorScene.m; sourceTree = "<group>"; };
+		E71583DA1BFA9C5B00C1E5E7 /* G2PlusScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2PlusScene.h; sourceTree = "<group>"; };
+		E71583DB1BFA9C5B00C1E5E7 /* G2PlusScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2PlusScene.m; sourceTree = "<group>"; };
+		E71583DD1BFA9C6C00C1E5E7 /* G2PlusWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2PlusWinScene.h; sourceTree = "<group>"; };
+		E71583DE1BFA9C6C00C1E5E7 /* G2PlusWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2PlusWinScene.m; sourceTree = "<group>"; };
+		E71583E01BFA9C7C00C1E5E7 /* G2PlusLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2PlusLoseScene.h; sourceTree = "<group>"; };
+		E71583E11BFA9C7C00C1E5E7 /* G2PlusLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2PlusLoseScene.m; sourceTree = "<group>"; };
+		E71583E31BFA9C8F00C1E5E7 /* G2PlusFinishScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2PlusFinishScene.h; sourceTree = "<group>"; };
+		E71583E41BFA9C8F00C1E5E7 /* G2PlusFinishScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2PlusFinishScene.m; sourceTree = "<group>"; };
+		E71583E61BFA9CD300C1E5E7 /* G2SubtractScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2SubtractScene.h; sourceTree = "<group>"; };
+		E71583E71BFA9CD300C1E5E7 /* G2SubtractScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2SubtractScene.m; sourceTree = "<group>"; };
+		E71583E91BFA9CEC00C1E5E7 /* G2SubtractWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2SubtractWinScene.h; sourceTree = "<group>"; };
+		E71583EA1BFA9CEC00C1E5E7 /* G2SubtractWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2SubtractWinScene.m; sourceTree = "<group>"; };
+		E71583EC1BFA9CFC00C1E5E7 /* G2SubtractLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2SubtractLoseScene.h; sourceTree = "<group>"; };
+		E71583ED1BFA9CFC00C1E5E7 /* G2SubtractLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2SubtractLoseScene.m; sourceTree = "<group>"; };
+		E71583EF1BFA9D0C00C1E5E7 /* G2SubtractFinishScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2SubtractFinishScene.h; sourceTree = "<group>"; };
+		E71583F01BFA9D0C00C1E5E7 /* G2SubtractFinishScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2SubtractFinishScene.m; sourceTree = "<group>"; };
+		E785E50B1BFD3D2600D23CCB /* G3OperatorScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3OperatorScene.h; sourceTree = "<group>"; };
+		E785E50C1BFD3D2600D23CCB /* G3OperatorScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3OperatorScene.m; sourceTree = "<group>"; };
+		E785E50E1BFD3D6B00D23CCB /* G3PlusScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3PlusScene.h; sourceTree = "<group>"; };
+		E785E50F1BFD3D6B00D23CCB /* G3PlusScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3PlusScene.m; sourceTree = "<group>"; };
+		E785E5111BFD3D7E00D23CCB /* G3PlusWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3PlusWinScene.h; sourceTree = "<group>"; };
+		E785E5121BFD3D7E00D23CCB /* G3PlusWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3PlusWinScene.m; sourceTree = "<group>"; };
+		E785E5141BFD3D9700D23CCB /* G3PlusLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3PlusLoseScene.h; sourceTree = "<group>"; };
+		E785E5151BFD3D9700D23CCB /* G3PlusLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3PlusLoseScene.m; sourceTree = "<group>"; };
+		E785E5171BFD3DA700D23CCB /* G3PlusFinishScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3PlusFinishScene.h; sourceTree = "<group>"; };
+		E785E5181BFD3DA700D23CCB /* G3PlusFinishScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3PlusFinishScene.m; sourceTree = "<group>"; };
+		E785E51A1BFD3DBB00D23CCB /* G3SubtractScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3SubtractScene.h; sourceTree = "<group>"; };
+		E785E51B1BFD3DBB00D23CCB /* G3SubtractScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3SubtractScene.m; sourceTree = "<group>"; };
+		E785E51D1BFD3DCD00D23CCB /* G3SubtractWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3SubtractWinScene.h; sourceTree = "<group>"; };
+		E785E51E1BFD3DCD00D23CCB /* G3SubtractWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3SubtractWinScene.m; sourceTree = "<group>"; };
+		E785E5201BFD3DDF00D23CCB /* G3SubtractLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3SubtractLoseScene.h; sourceTree = "<group>"; };
+		E785E5211BFD3DDF00D23CCB /* G3SubtractLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3SubtractLoseScene.m; sourceTree = "<group>"; };
+		E785E5231BFD3DF200D23CCB /* G3SubtractFinishScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3SubtractFinishScene.h; sourceTree = "<group>"; };
+		E785E5241BFD3DF200D23CCB /* G3SubtractFinishScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3SubtractFinishScene.m; sourceTree = "<group>"; };
+		E785E5281BFD448200D23CCB /* G3MultiplyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3MultiplyScene.h; sourceTree = "<group>"; };
+		E785E5291BFD448200D23CCB /* G3MultiplyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3MultiplyScene.m; sourceTree = "<group>"; };
+		E785E52B1BFD449300D23CCB /* G3MultiplyWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3MultiplyWinScene.h; sourceTree = "<group>"; };
+		E785E52C1BFD449300D23CCB /* G3MultiplyWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3MultiplyWinScene.m; sourceTree = "<group>"; };
+		E785E52E1BFD44A200D23CCB /* G3MultiplyLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3MultiplyLoseScene.h; sourceTree = "<group>"; };
+		E785E52F1BFD44A200D23CCB /* G3MultiplyLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3MultiplyLoseScene.m; sourceTree = "<group>"; };
+		E785E5311BFD44B500D23CCB /* G3MultiplyFinishScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3MultiplyFinishScene.h; sourceTree = "<group>"; };
+		E785E5321BFD44B500D23CCB /* G3MultiplyFinishScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3MultiplyFinishScene.m; sourceTree = "<group>"; };
+		E785E5341BFD4C3F00D23CCB /* G3DivideScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3DivideScene.h; sourceTree = "<group>"; };
+		E785E5351BFD4C3F00D23CCB /* G3DivideScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3DivideScene.m; sourceTree = "<group>"; };
+		E785E5371BFD4C4E00D23CCB /* G3DivideWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3DivideWinScene.h; sourceTree = "<group>"; };
+		E785E5381BFD4C4E00D23CCB /* G3DivideWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3DivideWinScene.m; sourceTree = "<group>"; };
+		E785E53A1BFD4C5E00D23CCB /* G3DivideLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3DivideLoseScene.h; sourceTree = "<group>"; };
+		E785E53B1BFD4C5E00D23CCB /* G3DivideLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3DivideLoseScene.m; sourceTree = "<group>"; };
+		E785E53D1BFD4C6D00D23CCB /* G3DivideFinishScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3DivideFinishScene.h; sourceTree = "<group>"; };
+		E785E53E1BFD4C6D00D23CCB /* G3DivideFinishScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3DivideFinishScene.m; sourceTree = "<group>"; };
+		E7CFFF721BF725EC00EF8EB4 /* CrazyMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CFFF761BF725EC00EF8EB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7CFFF781BF725EC00EF8EB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7CFFF791BF725EC00EF8EB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7CFFF7B1BF725EC00EF8EB4 /* MenuScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		E7CFFF7C1BF725EC00EF8EB4 /* MenuScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
+		E7CFFF7E1BF725EC00EF8EB4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E7CFFF801BF725EC00EF8EB4 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E7CFFF811BF725EC00EF8EB4 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		E7CFFF841BF725EC00EF8EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7CFFF861BF725EC00EF8EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7CFFF8B1BF725EC00EF8EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CFFF901BF725EC00EF8EB4 /* CrazyMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazyMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CFFF941BF725EC00EF8EB4 /* CrazyMathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyMathTests.m; sourceTree = "<group>"; };
+		E7CFFF961BF725EC00EF8EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CFFF9B1BF725EC00EF8EB4 /* CrazyMathUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazyMathUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CFFF9F1BF725EC00EF8EB4 /* CrazyMathUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyMathUITests.m; sourceTree = "<group>"; };
+		E7CFFFA11BF725EC00EF8EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CFFFAE1BF72B2200EF8EB4 /* LevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelScene.h; sourceTree = "<group>"; };
+		E7CFFFAF1BF72B2200EF8EB4 /* LevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelScene.m; sourceTree = "<group>"; };
+		E7CFFFB21BF7D09700EF8EB4 /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
+		E7CFFFB31BF7D09700EF8EB4 /* TestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
+		E7CFFFB51BF7D0AE00EF8EB4 /* IntroductionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionScene.h; sourceTree = "<group>"; };
+		E7CFFFB61BF7D0AE00EF8EB4 /* IntroductionScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionScene.m; sourceTree = "<group>"; };
+		E7CFFFB91BF7D91E00EF8EB4 /* G1OperatorScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1OperatorScene.h; sourceTree = "<group>"; };
+		E7CFFFBA1BF7D91E00EF8EB4 /* G1OperatorScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1OperatorScene.m; sourceTree = "<group>"; };
+		E7CFFFBD1BF7DADA00EF8EB4 /* G1PlusScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1PlusScene.h; sourceTree = "<group>"; };
+		E7CFFFBE1BF7DADA00EF8EB4 /* G1PlusScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1PlusScene.m; sourceTree = "<group>"; };
+		E7CFFFC01BF7DBA300EF8EB4 /* G1PlusWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1PlusWinScene.h; sourceTree = "<group>"; };
+		E7CFFFC11BF7DBA300EF8EB4 /* G1PlusWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1PlusWinScene.m; sourceTree = "<group>"; };
+		E7CFFFC31BF7DBB300EF8EB4 /* G1PlusLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1PlusLoseScene.h; sourceTree = "<group>"; };
+		E7CFFFC41BF7DBB300EF8EB4 /* G1PlusLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1PlusLoseScene.m; sourceTree = "<group>"; };
+		E7CFFFC61BF7DBCA00EF8EB4 /* G1PlusFinishScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1PlusFinishScene.h; sourceTree = "<group>"; };
+		E7CFFFC71BF7DBCA00EF8EB4 /* G1PlusFinishScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1PlusFinishScene.m; sourceTree = "<group>"; };
+		E7CFFFCA1BF7DC5500EF8EB4 /* G1SubtractScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1SubtractScene.h; sourceTree = "<group>"; };
+		E7CFFFCB1BF7DC5500EF8EB4 /* G1SubtractScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1SubtractScene.m; sourceTree = "<group>"; };
+		E7CFFFCD1BF7DC6A00EF8EB4 /* G1SubtractWinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1SubtractWinScene.h; sourceTree = "<group>"; };
+		E7CFFFCE1BF7DC6A00EF8EB4 /* G1SubtractWinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1SubtractWinScene.m; sourceTree = "<group>"; };
+		E7CFFFD01BF7DC7F00EF8EB4 /* G1SubtractLoseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1SubtractLoseScene.h; sourceTree = "<group>"; };
+		E7CFFFD11BF7DC7F00EF8EB4 /* G1SubtractLoseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1SubtractLoseScene.m; sourceTree = "<group>"; };
+		E7CFFFD31BF7DC9600EF8EB4 /* G1SubtractFinishScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1SubtractFinishScene.h; sourceTree = "<group>"; };
+		E7CFFFD41BF7DC9600EF8EB4 /* G1SubtractFinishScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1SubtractFinishScene.m; sourceTree = "<group>"; };
+		E7DEDC211BFD8D9C00054F14 /* G1PlusGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1PlusGameOverScene.h; sourceTree = "<group>"; };
+		E7DEDC221BFD8D9C00054F14 /* G1PlusGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1PlusGameOverScene.m; sourceTree = "<group>"; };
+		E7DEDC241BFDAAE400054F14 /* G1SubtractGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G1SubtractGameOverScene.h; sourceTree = "<group>"; };
+		E7DEDC251BFDAAE400054F14 /* G1SubtractGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G1SubtractGameOverScene.m; sourceTree = "<group>"; };
+		E7DEDC271BFDAB0500054F14 /* G2PlusGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2PlusGameOverScene.h; sourceTree = "<group>"; };
+		E7DEDC281BFDAB0500054F14 /* G2PlusGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2PlusGameOverScene.m; sourceTree = "<group>"; };
+		E7DEDC2A1BFDAB1900054F14 /* G2SubtractGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G2SubtractGameOverScene.h; sourceTree = "<group>"; };
+		E7DEDC2B1BFDAB1900054F14 /* G2SubtractGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G2SubtractGameOverScene.m; sourceTree = "<group>"; };
+		E7DEDC2D1BFDAC3500054F14 /* G3PlusGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3PlusGameOverScene.h; sourceTree = "<group>"; };
+		E7DEDC2E1BFDAC3500054F14 /* G3PlusGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3PlusGameOverScene.m; sourceTree = "<group>"; };
+		E7DEDC301BFDAC5400054F14 /* G3SubtractGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3SubtractGameOverScene.h; sourceTree = "<group>"; };
+		E7DEDC311BFDAC5400054F14 /* G3SubtractGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3SubtractGameOverScene.m; sourceTree = "<group>"; };
+		E7DEDC331BFDAC6A00054F14 /* G3MultiplyGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3MultiplyGameOverScene.h; sourceTree = "<group>"; };
+		E7DEDC341BFDAC6A00054F14 /* G3MultiplyGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3MultiplyGameOverScene.m; sourceTree = "<group>"; };
+		E7DEDC361BFDAC7C00054F14 /* G3DivideGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3DivideGameOverScene.h; sourceTree = "<group>"; };
+		E7DEDC371BFDAC7C00054F14 /* G3DivideGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = G3DivideGameOverScene.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7CFFF6F1BF725EC00EF8EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CFFF8D1BF725EC00EF8EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CFFF981BF725EC00EF8EB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E71583D41BFA9B5700C1E5E7 /* Grade2 */ = {
+			isa = PBXGroup;
+			children = (
+				E71583D51BFA9B7A00C1E5E7 /* G2OperatorScene.h */,
+				E71583D61BFA9B7A00C1E5E7 /* G2OperatorScene.m */,
+				E71583D81BFA9B8400C1E5E7 /* Grade2Plus */,
+				E71583D91BFA9B9000C1E5E7 /* Grade2Subtract */,
+			);
+			name = Grade2;
+			sourceTree = "<group>";
+		};
+		E71583D81BFA9B8400C1E5E7 /* Grade2Plus */ = {
+			isa = PBXGroup;
+			children = (
+				E71583DA1BFA9C5B00C1E5E7 /* G2PlusScene.h */,
+				E71583DB1BFA9C5B00C1E5E7 /* G2PlusScene.m */,
+				E71583DD1BFA9C6C00C1E5E7 /* G2PlusWinScene.h */,
+				E71583DE1BFA9C6C00C1E5E7 /* G2PlusWinScene.m */,
+				E71583E01BFA9C7C00C1E5E7 /* G2PlusLoseScene.h */,
+				E71583E11BFA9C7C00C1E5E7 /* G2PlusLoseScene.m */,
+				E71583E31BFA9C8F00C1E5E7 /* G2PlusFinishScene.h */,
+				E71583E41BFA9C8F00C1E5E7 /* G2PlusFinishScene.m */,
+				E7DEDC271BFDAB0500054F14 /* G2PlusGameOverScene.h */,
+				E7DEDC281BFDAB0500054F14 /* G2PlusGameOverScene.m */,
+			);
+			name = Grade2Plus;
+			sourceTree = "<group>";
+		};
+		E71583D91BFA9B9000C1E5E7 /* Grade2Subtract */ = {
+			isa = PBXGroup;
+			children = (
+				E71583E61BFA9CD300C1E5E7 /* G2SubtractScene.h */,
+				E71583E71BFA9CD300C1E5E7 /* G2SubtractScene.m */,
+				E71583E91BFA9CEC00C1E5E7 /* G2SubtractWinScene.h */,
+				E71583EA1BFA9CEC00C1E5E7 /* G2SubtractWinScene.m */,
+				E71583EC1BFA9CFC00C1E5E7 /* G2SubtractLoseScene.h */,
+				E71583ED1BFA9CFC00C1E5E7 /* G2SubtractLoseScene.m */,
+				E71583EF1BFA9D0C00C1E5E7 /* G2SubtractFinishScene.h */,
+				E71583F01BFA9D0C00C1E5E7 /* G2SubtractFinishScene.m */,
+				E7DEDC2A1BFDAB1900054F14 /* G2SubtractGameOverScene.h */,
+				E7DEDC2B1BFDAB1900054F14 /* G2SubtractGameOverScene.m */,
+			);
+			name = Grade2Subtract;
+			sourceTree = "<group>";
+		};
+		E785E5051BFD3C9400D23CCB /* Grade3 */ = {
+			isa = PBXGroup;
+			children = (
+				E785E50B1BFD3D2600D23CCB /* G3OperatorScene.h */,
+				E785E50C1BFD3D2600D23CCB /* G3OperatorScene.m */,
+				E785E50A1BFD3D0700D23CCB /* Grade3Plus */,
+				E785E5091BFD3CEA00D23CCB /* Grade3Subtract */,
+				E785E5261BFD443000D23CCB /* Grade3Multiply */,
+				E785E5271BFD444600D23CCB /* Grade3Divide */,
+			);
+			name = Grade3;
+			sourceTree = "<group>";
+		};
+		E785E5091BFD3CEA00D23CCB /* Grade3Subtract */ = {
+			isa = PBXGroup;
+			children = (
+				E785E51A1BFD3DBB00D23CCB /* G3SubtractScene.h */,
+				E785E51B1BFD3DBB00D23CCB /* G3SubtractScene.m */,
+				E785E51D1BFD3DCD00D23CCB /* G3SubtractWinScene.h */,
+				E785E51E1BFD3DCD00D23CCB /* G3SubtractWinScene.m */,
+				E785E5201BFD3DDF00D23CCB /* G3SubtractLoseScene.h */,
+				E785E5211BFD3DDF00D23CCB /* G3SubtractLoseScene.m */,
+				E785E5231BFD3DF200D23CCB /* G3SubtractFinishScene.h */,
+				E785E5241BFD3DF200D23CCB /* G3SubtractFinishScene.m */,
+				E7DEDC301BFDAC5400054F14 /* G3SubtractGameOverScene.h */,
+				E7DEDC311BFDAC5400054F14 /* G3SubtractGameOverScene.m */,
+			);
+			name = Grade3Subtract;
+			sourceTree = "<group>";
+		};
+		E785E50A1BFD3D0700D23CCB /* Grade3Plus */ = {
+			isa = PBXGroup;
+			children = (
+				E785E50E1BFD3D6B00D23CCB /* G3PlusScene.h */,
+				E785E50F1BFD3D6B00D23CCB /* G3PlusScene.m */,
+				E785E5111BFD3D7E00D23CCB /* G3PlusWinScene.h */,
+				E785E5121BFD3D7E00D23CCB /* G3PlusWinScene.m */,
+				E785E5141BFD3D9700D23CCB /* G3PlusLoseScene.h */,
+				E785E5151BFD3D9700D23CCB /* G3PlusLoseScene.m */,
+				E785E5171BFD3DA700D23CCB /* G3PlusFinishScene.h */,
+				E785E5181BFD3DA700D23CCB /* G3PlusFinishScene.m */,
+				E7DEDC2D1BFDAC3500054F14 /* G3PlusGameOverScene.h */,
+				E7DEDC2E1BFDAC3500054F14 /* G3PlusGameOverScene.m */,
+			);
+			name = Grade3Plus;
+			sourceTree = "<group>";
+		};
+		E785E5261BFD443000D23CCB /* Grade3Multiply */ = {
+			isa = PBXGroup;
+			children = (
+				E785E5281BFD448200D23CCB /* G3MultiplyScene.h */,
+				E785E5291BFD448200D23CCB /* G3MultiplyScene.m */,
+				E785E52B1BFD449300D23CCB /* G3MultiplyWinScene.h */,
+				E785E52C1BFD449300D23CCB /* G3MultiplyWinScene.m */,
+				E785E52E1BFD44A200D23CCB /* G3MultiplyLoseScene.h */,
+				E785E52F1BFD44A200D23CCB /* G3MultiplyLoseScene.m */,
+				E785E5311BFD44B500D23CCB /* G3MultiplyFinishScene.h */,
+				E785E5321BFD44B500D23CCB /* G3MultiplyFinishScene.m */,
+				E7DEDC331BFDAC6A00054F14 /* G3MultiplyGameOverScene.h */,
+				E7DEDC341BFDAC6A00054F14 /* G3MultiplyGameOverScene.m */,
+			);
+			name = Grade3Multiply;
+			sourceTree = "<group>";
+		};
+		E785E5271BFD444600D23CCB /* Grade3Divide */ = {
+			isa = PBXGroup;
+			children = (
+				E785E5341BFD4C3F00D23CCB /* G3DivideScene.h */,
+				E785E5351BFD4C3F00D23CCB /* G3DivideScene.m */,
+				E785E5371BFD4C4E00D23CCB /* G3DivideWinScene.h */,
+				E785E5381BFD4C4E00D23CCB /* G3DivideWinScene.m */,
+				E785E53A1BFD4C5E00D23CCB /* G3DivideLoseScene.h */,
+				E785E53B1BFD4C5E00D23CCB /* G3DivideLoseScene.m */,
+				E785E53D1BFD4C6D00D23CCB /* G3DivideFinishScene.h */,
+				E785E53E1BFD4C6D00D23CCB /* G3DivideFinishScene.m */,
+				E7DEDC361BFDAC7C00054F14 /* G3DivideGameOverScene.h */,
+				E7DEDC371BFDAC7C00054F14 /* G3DivideGameOverScene.m */,
+			);
+			name = Grade3Divide;
+			sourceTree = "<group>";
+		};
+		E7CFFF691BF725EC00EF8EB4 = {
+			isa = PBXGroup;
+			children = (
+				E7CFFF741BF725EC00EF8EB4 /* CrazyMath */,
+				E7CFFF931BF725EC00EF8EB4 /* CrazyMathTests */,
+				E7CFFF9E1BF725EC00EF8EB4 /* CrazyMathUITests */,
+				E7CFFF731BF725EC00EF8EB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7CFFF731BF725EC00EF8EB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFF721BF725EC00EF8EB4 /* CrazyMath.app */,
+				E7CFFF901BF725EC00EF8EB4 /* CrazyMathTests.xctest */,
+				E7CFFF9B1BF725EC00EF8EB4 /* CrazyMathUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7CFFF741BF725EC00EF8EB4 /* CrazyMath */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFFB81BF7D8F000EF8EB4 /* Grade1 */,
+				E71583D41BFA9B5700C1E5E7 /* Grade2 */,
+				E785E5051BFD3C9400D23CCB /* Grade3 */,
+				E7CFFFAD1BF72A8000EF8EB4 /* Finished */,
+				E7CFFFB11BF7D05900EF8EB4 /* Not Finished */,
+				E7CFFF861BF725EC00EF8EB4 /* Assets.xcassets */,
+				E7CFFF8B1BF725EC00EF8EB4 /* Info.plist */,
+				E7CFFF751BF725EC00EF8EB4 /* Supporting Files */,
+			);
+			path = CrazyMath;
+			sourceTree = "<group>";
+		};
+		E7CFFF751BF725EC00EF8EB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFF761BF725EC00EF8EB4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7CFFF931BF725EC00EF8EB4 /* CrazyMathTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFF941BF725EC00EF8EB4 /* CrazyMathTests.m */,
+				E7CFFF961BF725EC00EF8EB4 /* Info.plist */,
+			);
+			path = CrazyMathTests;
+			sourceTree = "<group>";
+		};
+		E7CFFF9E1BF725EC00EF8EB4 /* CrazyMathUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFF9F1BF725EC00EF8EB4 /* CrazyMathUITests.m */,
+				E7CFFFA11BF725EC00EF8EB4 /* Info.plist */,
+			);
+			path = CrazyMathUITests;
+			sourceTree = "<group>";
+		};
+		E7CFFFAD1BF72A8000EF8EB4 /* Finished */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFF781BF725EC00EF8EB4 /* AppDelegate.h */,
+				E7CFFF791BF725EC00EF8EB4 /* AppDelegate.m */,
+				E7CFFF7E1BF725EC00EF8EB4 /* GameScene.sks */,
+				E7CFFF801BF725EC00EF8EB4 /* GameViewController.h */,
+				E7CFFF811BF725EC00EF8EB4 /* GameViewController.m */,
+				E7CFFF831BF725EC00EF8EB4 /* Main.storyboard */,
+				E7CFFF7B1BF725EC00EF8EB4 /* MenuScene.h */,
+				E7CFFF7C1BF725EC00EF8EB4 /* MenuScene.m */,
+				E7CFFFAE1BF72B2200EF8EB4 /* LevelScene.h */,
+				E7CFFFAF1BF72B2200EF8EB4 /* LevelScene.m */,
+			);
+			name = Finished;
+			sourceTree = "<group>";
+		};
+		E7CFFFB11BF7D05900EF8EB4 /* Not Finished */ = {
+			isa = PBXGroup;
+			children = (
+				28F1B2871C02BAA100553D97 /* GameData.h */,
+				28F1B2881C02BAA900553D97 /* GameData.m */,
+				28F1B28A1C02BAB500553D97 /* GameScene.h */,
+				28F1B28B1C02BAC000553D97 /* GameScene.m */,
+				28F1B2921C02BB0C00553D97 /* PointsLabel.h */,
+				28F1B2931C02BB1200553D97 /* PointsLabel.m */,
+				28F1B28F1C02BAEE00553D97 /* Hero.h */,
+				28F1B2901C02BAF500553D97 /* Hero.m */,
+				28F1B28D1C02BAE500553D97 /* ground.png */,
+				28F1B2851C02BA8800553D97 /* WorldGenerator.m */,
+				28F1B2841C02BA7C00553D97 /* WorldGenerator.h */,
+				E7CFFFB21BF7D09700EF8EB4 /* TestScene.h */,
+				E7CFFFB31BF7D09700EF8EB4 /* TestScene.m */,
+				E7CFFFB51BF7D0AE00EF8EB4 /* IntroductionScene.h */,
+				E7CFFFB61BF7D0AE00EF8EB4 /* IntroductionScene.m */,
+			);
+			name = "Not Finished";
+			sourceTree = "<group>";
+		};
+		E7CFFFB81BF7D8F000EF8EB4 /* Grade1 */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFFB91BF7D91E00EF8EB4 /* G1OperatorScene.h */,
+				E7CFFFBA1BF7D91E00EF8EB4 /* G1OperatorScene.m */,
+				E7CFFFBC1BF7DABD00EF8EB4 /* Grade1Plus */,
+				E7CFFFC91BF7DC2300EF8EB4 /* Grade1Subtract */,
+			);
+			name = Grade1;
+			sourceTree = "<group>";
+		};
+		E7CFFFBC1BF7DABD00EF8EB4 /* Grade1Plus */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFFBD1BF7DADA00EF8EB4 /* G1PlusScene.h */,
+				E7CFFFBE1BF7DADA00EF8EB4 /* G1PlusScene.m */,
+				E7CFFFC01BF7DBA300EF8EB4 /* G1PlusWinScene.h */,
+				E7CFFFC11BF7DBA300EF8EB4 /* G1PlusWinScene.m */,
+				E7CFFFC31BF7DBB300EF8EB4 /* G1PlusLoseScene.h */,
+				E7CFFFC41BF7DBB300EF8EB4 /* G1PlusLoseScene.m */,
+				E7CFFFC61BF7DBCA00EF8EB4 /* G1PlusFinishScene.h */,
+				E7CFFFC71BF7DBCA00EF8EB4 /* G1PlusFinishScene.m */,
+				E7DEDC211BFD8D9C00054F14 /* G1PlusGameOverScene.h */,
+				E7DEDC221BFD8D9C00054F14 /* G1PlusGameOverScene.m */,
+			);
+			name = Grade1Plus;
+			sourceTree = "<group>";
+		};
+		E7CFFFC91BF7DC2300EF8EB4 /* Grade1Subtract */ = {
+			isa = PBXGroup;
+			children = (
+				E7CFFFCA1BF7DC5500EF8EB4 /* G1SubtractScene.h */,
+				E7CFFFCB1BF7DC5500EF8EB4 /* G1SubtractScene.m */,
+				E7CFFFCD1BF7DC6A00EF8EB4 /* G1SubtractWinScene.h */,
+				E7CFFFCE1BF7DC6A00EF8EB4 /* G1SubtractWinScene.m */,
+				E7CFFFD01BF7DC7F00EF8EB4 /* G1SubtractLoseScene.h */,
+				E7CFFFD11BF7DC7F00EF8EB4 /* G1SubtractLoseScene.m */,
+				E7CFFFD31BF7DC9600EF8EB4 /* G1SubtractFinishScene.h */,
+				E7CFFFD41BF7DC9600EF8EB4 /* G1SubtractFinishScene.m */,
+				E7DEDC241BFDAAE400054F14 /* G1SubtractGameOverScene.h */,
+				E7DEDC251BFDAAE400054F14 /* G1SubtractGameOverScene.m */,
+			);
+			name = Grade1Subtract;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7CFFF711BF725EC00EF8EB4 /* CrazyMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CFFFA41BF725EC00EF8EB4 /* Build configuration list for PBXNativeTarget "CrazyMath" */;
+			buildPhases = (
+				E7CFFF6E1BF725EC00EF8EB4 /* Sources */,
+				E7CFFF6F1BF725EC00EF8EB4 /* Frameworks */,
+				E7CFFF701BF725EC00EF8EB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrazyMath;
+			productName = CrazyMath;
+			productReference = E7CFFF721BF725EC00EF8EB4 /* CrazyMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7CFFF8F1BF725EC00EF8EB4 /* CrazyMathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CFFFA71BF725EC00EF8EB4 /* Build configuration list for PBXNativeTarget "CrazyMathTests" */;
+			buildPhases = (
+				E7CFFF8C1BF725EC00EF8EB4 /* Sources */,
+				E7CFFF8D1BF725EC00EF8EB4 /* Frameworks */,
+				E7CFFF8E1BF725EC00EF8EB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7CFFF921BF725EC00EF8EB4 /* PBXTargetDependency */,
+			);
+			name = CrazyMathTests;
+			productName = CrazyMathTests;
+			productReference = E7CFFF901BF725EC00EF8EB4 /* CrazyMathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7CFFF9A1BF725EC00EF8EB4 /* CrazyMathUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CFFFAA1BF725EC00EF8EB4 /* Build configuration list for PBXNativeTarget "CrazyMathUITests" */;
+			buildPhases = (
+				E7CFFF971BF725EC00EF8EB4 /* Sources */,
+				E7CFFF981BF725EC00EF8EB4 /* Frameworks */,
+				E7CFFF991BF725EC00EF8EB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7CFFF9D1BF725EC00EF8EB4 /* PBXTargetDependency */,
+			);
+			name = CrazyMathUITests;
+			productName = CrazyMathUITests;
+			productReference = E7CFFF9B1BF725EC00EF8EB4 /* CrazyMathUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7CFFF6A1BF725EC00EF8EB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Zhouwu Zihuang";
+				TargetAttributes = {
+					E7CFFF711BF725EC00EF8EB4 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = Y48AW9LBLR;
+					};
+					E7CFFF8F1BF725EC00EF8EB4 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 6MHNCCV2CQ;
+						TestTargetID = E7CFFF711BF725EC00EF8EB4;
+					};
+					E7CFFF9A1BF725EC00EF8EB4 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 6MHNCCV2CQ;
+						TestTargetID = E7CFFF711BF725EC00EF8EB4;
+					};
+				};
+			};
+			buildConfigurationList = E7CFFF6D1BF725EC00EF8EB4 /* Build configuration list for PBXProject "CrazyMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7CFFF691BF725EC00EF8EB4;
+			productRefGroup = E7CFFF731BF725EC00EF8EB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7CFFF711BF725EC00EF8EB4 /* CrazyMath */,
+				E7CFFF8F1BF725EC00EF8EB4 /* CrazyMathTests */,
+				E7CFFF9A1BF725EC00EF8EB4 /* CrazyMathUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7CFFF701BF725EC00EF8EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F1B28E1C02BAE500553D97 /* ground.png in Resources */,
+				E7CFFF7F1BF725EC00EF8EB4 /* GameScene.sks in Resources */,
+				E7CFFF871BF725EC00EF8EB4 /* Assets.xcassets in Resources */,
+				E7CFFF851BF725EC00EF8EB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CFFF8E1BF725EC00EF8EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CFFF991BF725EC00EF8EB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7CFFF6E1BF725EC00EF8EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CFFFB71BF7D0AE00EF8EB4 /* IntroductionScene.m in Sources */,
+				E785E5221BFD3DDF00D23CCB /* G3SubtractLoseScene.m in Sources */,
+				E785E53F1BFD4C6D00D23CCB /* G3DivideFinishScene.m in Sources */,
+				E785E5131BFD3D7E00D23CCB /* G3PlusWinScene.m in Sources */,
+				E7DEDC351BFDAC6A00054F14 /* G3MultiplyGameOverScene.m in Sources */,
+				E7CFFFD51BF7DC9600EF8EB4 /* G1SubtractFinishScene.m in Sources */,
+				E71583E21BFA9C7C00C1E5E7 /* G2PlusLoseScene.m in Sources */,
+				E7CFFF821BF725EC00EF8EB4 /* GameViewController.m in Sources */,
+				E785E5101BFD3D6B00D23CCB /* G3PlusScene.m in Sources */,
+				E785E50D1BFD3D2600D23CCB /* G3OperatorScene.m in Sources */,
+				E7CFFFB01BF72B2200EF8EB4 /* LevelScene.m in Sources */,
+				E7DEDC321BFDAC5400054F14 /* G3SubtractGameOverScene.m in Sources */,
+				E785E52D1BFD449300D23CCB /* G3MultiplyWinScene.m in Sources */,
+				E7DEDC2C1BFDAB1900054F14 /* G2SubtractGameOverScene.m in Sources */,
+				E71583EB1BFA9CEC00C1E5E7 /* G2SubtractWinScene.m in Sources */,
+				E7CFFFCF1BF7DC6A00EF8EB4 /* G1SubtractWinScene.m in Sources */,
+				E7CFFFBF1BF7DADA00EF8EB4 /* G1PlusScene.m in Sources */,
+				E7DEDC2F1BFDAC3500054F14 /* G3PlusGameOverScene.m in Sources */,
+				E71583E51BFA9C8F00C1E5E7 /* G2PlusFinishScene.m in Sources */,
+				E7CFFFCC1BF7DC5500EF8EB4 /* G1SubtractScene.m in Sources */,
+				E785E51F1BFD3DCD00D23CCB /* G3SubtractWinScene.m in Sources */,
+				E7DEDC231BFD8D9C00054F14 /* G1PlusGameOverScene.m in Sources */,
+				28F1B2861C02BA8800553D97 /* WorldGenerator.m in Sources */,
+				E785E51C1BFD3DBB00D23CCB /* G3SubtractScene.m in Sources */,
+				E7CFFFB41BF7D09700EF8EB4 /* TestScene.m in Sources */,
+				E7CFFFC81BF7DBCA00EF8EB4 /* G1PlusFinishScene.m in Sources */,
+				E7CFFF7A1BF725EC00EF8EB4 /* AppDelegate.m in Sources */,
+				E785E5251BFD3DF200D23CCB /* G3SubtractFinishScene.m in Sources */,
+				E7CFFF7D1BF725EC00EF8EB4 /* MenuScene.m in Sources */,
+				E71583D71BFA9B7A00C1E5E7 /* G2OperatorScene.m in Sources */,
+				E7DEDC381BFDAC7C00054F14 /* G3DivideGameOverScene.m in Sources */,
+				E785E52A1BFD448200D23CCB /* G3MultiplyScene.m in Sources */,
+				E785E5391BFD4C4E00D23CCB /* G3DivideWinScene.m in Sources */,
+				E7CFFFC51BF7DBB300EF8EB4 /* G1PlusLoseScene.m in Sources */,
+				E785E53C1BFD4C5E00D23CCB /* G3DivideLoseScene.m in Sources */,
+				E71583E81BFA9CD300C1E5E7 /* G2SubtractScene.m in Sources */,
+				E7CFFFBB1BF7D91E00EF8EB4 /* G1OperatorScene.m in Sources */,
+				28F1B2891C02BAA900553D97 /* GameData.m in Sources */,
+				E71583EE1BFA9CFC00C1E5E7 /* G2SubtractLoseScene.m in Sources */,
+				E7CFFF771BF725EC00EF8EB4 /* main.m in Sources */,
+				E7CFFFC21BF7DBA300EF8EB4 /* G1PlusWinScene.m in Sources */,
+				E7CFFFD21BF7DC7F00EF8EB4 /* G1SubtractLoseScene.m in Sources */,
+				E71583F11BFA9D0C00C1E5E7 /* G2SubtractFinishScene.m in Sources */,
+				28F1B28C1C02BAC000553D97 /* GameScene.m in Sources */,
+				E7DEDC261BFDAAE400054F14 /* G1SubtractGameOverScene.m in Sources */,
+				E71583DF1BFA9C6C00C1E5E7 /* G2PlusWinScene.m in Sources */,
+				E785E5191BFD3DA700D23CCB /* G3PlusFinishScene.m in Sources */,
+				E785E5301BFD44A200D23CCB /* G3MultiplyLoseScene.m in Sources */,
+				E785E5331BFD44B500D23CCB /* G3MultiplyFinishScene.m in Sources */,
+				28F1B2941C02BB1200553D97 /* PointsLabel.m in Sources */,
+				28F1B2911C02BAF500553D97 /* Hero.m in Sources */,
+				E71583DC1BFA9C5B00C1E5E7 /* G2PlusScene.m in Sources */,
+				E7DEDC291BFDAB0500054F14 /* G2PlusGameOverScene.m in Sources */,
+				E785E5361BFD4C3F00D23CCB /* G3DivideScene.m in Sources */,
+				E785E5161BFD3D9700D23CCB /* G3PlusLoseScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CFFF8C1BF725EC00EF8EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CFFF951BF725EC00EF8EB4 /* CrazyMathTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CFFF971BF725EC00EF8EB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7CFFFA01BF725EC00EF8EB4 /* CrazyMathUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7CFFF921BF725EC00EF8EB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7CFFF711BF725EC00EF8EB4 /* CrazyMath */;
+			targetProxy = E7CFFF911BF725EC00EF8EB4 /* PBXContainerItemProxy */;
+		};
+		E7CFFF9D1BF725EC00EF8EB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7CFFF711BF725EC00EF8EB4 /* CrazyMath */;
+			targetProxy = E7CFFF9C1BF725EC00EF8EB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7CFFF831BF725EC00EF8EB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7CFFF841BF725EC00EF8EB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7CFFFA21BF725EC00EF8EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7CFFFA31BF725EC00EF8EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7CFFFA51BF725EC00EF8EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CrazyMath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "roll-up-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		E7CFFFA61BF725EC00EF8EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CrazyMath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "roll-up-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		E7CFFFA81BF725EC00EF8EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = CrazyMathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxxx.CrazyMathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrazyMath.app/CrazyMath";
+			};
+			name = Debug;
+		};
+		E7CFFFA91BF725EC00EF8EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CrazyMathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxxx.CrazyMathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrazyMath.app/CrazyMath";
+			};
+			name = Release;
+		};
+		E7CFFFAB1BF725EC00EF8EB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = CrazyMathUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxxx.CrazyMathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CrazyMath;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E7CFFFAC1BF725EC00EF8EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CrazyMathUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxxx.CrazyMathUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CrazyMath;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7CFFF6D1BF725EC00EF8EB4 /* Build configuration list for PBXProject "CrazyMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CFFFA21BF725EC00EF8EB4 /* Debug */,
+				E7CFFFA31BF725EC00EF8EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CFFFA41BF725EC00EF8EB4 /* Build configuration list for PBXNativeTarget "CrazyMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CFFFA51BF725EC00EF8EB4 /* Debug */,
+				E7CFFFA61BF725EC00EF8EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CFFFA71BF725EC00EF8EB4 /* Build configuration list for PBXNativeTarget "CrazyMathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CFFFA81BF725EC00EF8EB4 /* Debug */,
+				E7CFFFA91BF725EC00EF8EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CFFFAA1BF725EC00EF8EB4 /* Build configuration list for PBXNativeTarget "CrazyMathUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CFFFAB1BF725EC00EF8EB4 /* Debug */,
+				E7CFFFAC1BF725EC00EF8EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7CFFF6A1BF725EC00EF8EB4 /* Project object */;
+}
